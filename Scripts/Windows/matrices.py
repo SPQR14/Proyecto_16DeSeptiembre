@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("..\..\Data_set\Chispazo.csv", sep = ',', encoding='utf8')
+df = pd.read_csv("..\..\Data_set\espacio_muestral_simulado.csv", sep = ',', encoding='utf8')
 
 v1 = list(df['R1'])
 v2 = list(df['R2'])

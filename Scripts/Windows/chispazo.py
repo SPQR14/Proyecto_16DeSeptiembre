@@ -11,9 +11,8 @@ def generar_sorteos():
             l[i].append(urna[a])
             urna.pop(a)
             l[i].sort()
-        print(l[i])
     return l
 
-cols = 'V1 V2 V3 V4 V5'
+cols = 'R1 R2 R3 R4 R5'
 df = pd.DataFrame(generar_sorteos(), columns = cols.split())
-df.to_csv("chisp.csv", index = False, header = True)
+df.to_csv("..\..\Data_set\espacio_muestral_simulado.csv", index = False, header = True)
