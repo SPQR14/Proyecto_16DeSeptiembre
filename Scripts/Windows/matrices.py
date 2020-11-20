@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("..\..\Data_set\espacio_muestral_simulado.csv", sep = ',', encoding='utf8')
+archivo = input("Archivo para calcular: ")
+
+df = pd.read_csv("..\..\Data_set\\"+ archivo, sep = ',', encoding='utf8')
 
 v1 = list(df['R1'])
 v2 = list(df['R2'])
@@ -28,7 +30,7 @@ m5 = np.multiply(np.asmatrix(matriz_de_transicion(v5)).transpose(), 100.0)
 
 def pasar_a_csv(m, x):
     df = pd.DataFrame(m)
-    df.to_csv(f"..\..\Data_set\m{x}.csv", index = False, sep = ',', encoding = 'utf8')
+    df.to_csv(f"..\..\Data_set\m{x}" + archivo + ".csv", index = False, sep = ',', encoding = 'utf8')
 
 
 pasar_a_csv(m1, 1)
