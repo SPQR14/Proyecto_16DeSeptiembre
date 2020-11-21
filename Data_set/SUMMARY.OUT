@@ -1,0 +1,18 @@
+Fit All
+
+Document:  D:\Desarrollo\Proyecto_16DeSeptiembre\Data_set\todas.TXT
+Data File: D:\Desarrollo\Proyecto_16DeSeptiembre\Data_set\todas.TXT
+
+
+Function       Sq Error
+-----------------------
+Uniform        2.62e-032
+Beta           0.000512
+Normal         0.00462
+Gamma          0.00581
+Erlang         0.00599
+Exponential    0.009
+Lognormal      0.00996
+Triangular     0.0114
+Poisson        0.0387
+Weibull        0.0718
